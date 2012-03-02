@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Bug 7</title>
+	
+	<style type="text/css">
+		.navigation {
+			padding: 5px 5px 10px 5px;
+		}	
+	
+		.prev {
+			float: left;
+		}
+	
+		.next {
+			float: right;
+		}
+	
+		.instructions {
+			padding: 5px;
+			border-bottom: 1px solid black;
+			margin-bottom: 10px;
+		}
+		
+		#bar {
+			background: red;
+			width: 300px;
+			height: 1px;
+		}		
+	
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="navigation">
+	<a class="prev" href="bug6.html">&lt; Prev Bug</a>
+	<a class="next" href="bug8.html">Next Bug &gt;</a>
+</div>
+	
+<div class="instructions">
+	<h3>Instructions:</h3>
+
+	The red bar below should be 1x300 pixels, but is too thick in IE6. Fix the problem without using Javascript. 
+</div>
+
+<div id="bar"></div>
+
+</body>
+
+</html>	

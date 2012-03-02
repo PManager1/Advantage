@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Bug 5</title>
+	
+	<style type="text/css">
+		.navigation {
+			padding: 5px 5px 10px 5px;
+		}	
+	
+		.prev {
+			float: left;
+		}
+	
+		.next {
+			float: right;
+		}
+	
+		.instructions {
+			padding: 5px;
+			border-bottom: 1px solid black;
+			margin-bottom: 10px;
+		}
+		
+		.outer {
+			border: 1px solid blue;
+			height: 150px;
+		}
+		
+		.left {
+			border: 1px solid green;
+			float: left;
+			width: 100px;
+			height: 100px;		
+			padding: 5px;
+		}
+		
+		.right {
+			border: 1px solid red;
+			float: right;
+			width: 100px;
+			height: 100px;
+			margin: 5px 100px 5px 0;
+			padding: 5px;
+		}
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="navigation">
+	<a class="prev" href="bug4.html">&lt; Prev Bug</a>
+	<a class="next" href="bug6.html">Next Bug &gt;</a>
+</div>
+	
+<div class="instructions">
+	<h3>Instructions:</h3>
+
+	The margins of the red floated box are double other browsers on IE6. 
+	Correct the problem using CSS without removing the float property.
+</div>
+
+<div class="outer">
+	<div class="left">
+		left float
+	</div>
+	<div class="right">
+		right float
+	</div>
+</div>
+
+
+</body>
+
+</html>	

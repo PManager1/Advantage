@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: index.css" type="text/css">
+<style type="text/css">
+
+/* CSS Document */
+
+
+#topNav{
+	position: relative;
+	float:left;
+	width:100%;
+	padding-top: 10px;
+	margin-bottom: 25px;
+}
+
+
+.advImg {
+	float:left;
+	position:relative;
+	left: 5px;
+}
+#select1{
+	position: absolute;
+	left:500px;
+	width:50px;
+}
+
+#select2{
+	position: absolute;
+	left:650px;
+}
+
+#textfield{
+	position: absolute;
+	left:770px;
+	width: 100px;
+}
+	
+	
+#search_img {
+	position: absolute;
+    left:875px;
+}
+
+
+#centeredmenu {
+	position: relative;
+	float:left;
+	width:100%;
+	padding-top: 10px;
+	margin-bottom: 25px;
+}
+
+
+
+
+#centeredmenu ul {
+	float:left;
+	list-style:none;
+	position:relative;
+	clear:left;
+	text-align: center;
+	left: 400px;
+}
+
+
+#centeredmenu ul li {
+	
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	right:50%;
+}
+
+#centeredmenu ul li a {
+	display:block;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	color:#000;
+	text-decoration:none;
+	line-height:1.3em;
+	background-color: #ddd;
+}
+
+#centeredmenu ul li a:hover {
+   background:#369;
+   color:#fff;
+}
+
+
+
+
+#arrowmenu{
+	position: relative;
+	float:left;
+	width:100%;
+	padding-top: 10px;
+	margin-bottom: 25px;
+}
+
+#arrowmenu ul {
+	float:left;
+	list-style:none;
+	position:relative;
+	clear:left;
+	text-align: center;
+	left: 400px;
+}
+
+
+#arrowmenu ul li {
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	right:50%;
+}
+
+#arrowmenu ul li a {
+	display:block;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	color:#000;
+	text-decoration:none;
+	line-height:1.3em;
+	background-image: url(images/resStepDividerVisited.gif);
+	background-color: #ddd;
+	background-repeat: no-repeat;
+	background-position: right;
+
+
+}
+
+#arrowmenu ul li a:hover {
+	color:#fff;
+	background-color: #ddd;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-image: url(images/resStepDividerPrevious.gif);
+}
+
+
+#MainLeft{
+	position:relative;
+	float:left;
+	/* [disabled]background-color: #30C; */
+	height: 650px;
+	width: 600px;
+	}
+
+#MainRight{
+	float:left;
+	background-color: #F36;
+	height: 650px;
+	width: 300px;
+	}
+	
+	#MainRightTop{
+	position:relative;
+	float:left;
+	background-color: #e2f0f5;
+	height: 350px;
+	width: 300px;
+	}
+		
+	
+	#MainRightBottom{
+	float:left;
+	background-color: #6CF;
+	height: 270px;
+	width: 300px;
+	}
+	
+	
+	#carContent1{
+	position: relative;
+	background-color: #CCC;
+	height: 92px;
+	width: 600px;		
+		}
+	
+	#cC1{
+	float: left;
+	left: 0px;
+	position:absolute;
+	background-color: #FFF;
+	height: 92px;
+	width: 150px;
+	}
+	
+	
+	#cC1{
+	float: left;
+	left: 0px;
+	position:absolute;
+	background-color: #FFF;
+	height: 92px;
+	width: 150px;
+	}
+	
+	#cC2{
+	float: left;
+	position: absolute;
+	left: 150px;
+	background-color: #3F9;
+	height: 92px;
+	width: 150px;
+	}
+	
+	#cC3{	
+	float: left;
+	position: absolute;
+	left: 300px;
+	background-color: #F93;
+	height: 92px;
+	width: 150px;
+	}
+	
+	#cC4{	
+	float: left;
+	position: absolute;
+	left: 450px;
+	background-color: #CFC;
+	height: 92px;
+	width: 150px;
+	}
+
+</style>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+       	   		
+<script type="text/javascript">
+		
+var data = { "searchResponse" : { "result" : [ 
+
+	{
+		carId: 1,
+		carPrice : 35.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car1.gif',
+		largeImage : 'images/vehicles/ADUSECAR999.jpg',
+		carSize : 'Extra Small Car',
+		type : 'Economy',
+		passengers : 4,
+		smallSuitcase : 2,
+		largeSuitcase : 0,
+		fees : 6.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', '24 miles/gallon']
+	},
+	{
+		carId: 2,
+		carPrice : 37.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car2.gif',
+		largeImage : 'images/vehicles/ZEUSCCAR999.jpg',
+		carSize : 'Small Car',
+		type : 'Compact',
+		passengers : 4,
+		smallSuitcase : 1,
+		largeSuitcase : 2,
+		fees : 7.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', '24 miles/gallon']
+	},
+	{
+		carId: 3,
+		carPrice : 38.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car3.gif',
+		largeImage : 'images/vehicles/ZEUSICAR999.jpg',
+		carSize : 'Medium Car',
+		type : 'Intermediate',
+		passengers : 4,
+		smallSuitcase : 2,
+		largeSuitcase : 2,
+		fees : 8.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', 'Dual Airbags', 'ABS', '25 miles/gallon']
+	},
+	{
+		carId: 4,
+		carPrice : 43.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car4.gif',
+		largeImage : 'images/vehicles/ADUSFCAR999.jpg',
+		carSize : 'Large Car',
+		type : 'Full Size',
+		passengers : 4,
+		smallSuitcase : 2,
+		largeSuitcase : 3,
+		fees : 9.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', 'Dual Airbags', 'ABS', '25 miles/gallon']
+	},
+	{
+		carId: 5,
+		carPrice : 57.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car5.gif',
+		largeImage : 'images/vehicles/ZEUSIFAR999.jpg',
+		carSize : 'Small SUV',
+		type : 'Midsize SUV',
+		passengers : 5,
+		smallSuitcase : 2,
+		largeSuitcase : 2,
+		fees : 10.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', 'Dual Airbags', 'ABS', '18 miles/gallon']
+	},
+	{
+		carId: 7,
+		carPrice : 86.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car7.gif',
+		largeImage : 'images/vehicles/ZEUSMVAR999.jpg',
+		carSize : 'Minivan',
+		type : 'Minivan',
+		passengers : 7,
+		smallSuitcase : 4,
+		largeSuitcase : 4,
+		fees : 12.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', 'Dual Airbags', 'ABS', '18 miles/gallon']
+	},
+	{
+		carId: 6,
+		carPrice : 69.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car6.gif',
+		largeImage : 'images/vehicles/ZEUSSFAR999.jpg',
+		carSize : 'Medium SUV',
+		type : 'Standard SUV',
+		passengers : 6,
+		smallSuitcase : 2,
+		largeSuitcase : 4,
+		fees : 11.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', 'Dual Airbags', 'ABS', '18 miles/gallon']
+	},]
+}
+};
+</script> 
+
+
+
+
+<script type="text/javascript">
+   		$(document).ready(function() {
+
+   			var myJSONObj = data.searchResponse.result;
+
+   			for(var i=0;i<=(myJSONObj.length)-1; i++)
+   			{
+   				
+   				
+   				/*This is the code for just displaying the whole JSON on frontend*/
+   				$("#loadDiv").append("<div>"+(myJSONObj[i].ID) +" , " 
+   				+ (myJSONObj[i].carId)+" , " 
+   				+ (myJSONObj[i].carPrice)+" , " 
+   				+ (myJSONObj[i].carRate)+" , " 
+   				+ (myJSONObj[i].smallImage)+" , " 
+   				+ (myJSONObj[i].largeImage)+" , "
+   				+ (myJSONObj[i].carSize)+" , "
+   				+ (myJSONObj[i].type)+" , "
+   				+ (myJSONObj[i].passengers)+" , "
+   				+ (myJSONObj[i].smallSuitcase)+" , "
+   				+ (myJSONObj[i].largeSuitcase)+" , "
+				+ (myJSONObj[i].fees)+" , "
+				+ (myJSONObj[i].carFeatures)+" , "
+   				+  "<div><br>");
+   				
+   				
+   				/* This the code for showing by Name and appending to 'showByName' div*/
+   				$("#cC1").append("<div> carId : "+ (myJSONObj[i].carId) + "<br> carPrice: "+(myJSONObj[i].carPrice)+"<br> carRate: "+ (myJSONObj[i].carRate)+  "<br> smallImage: "+ (myJSONObj[i].smallImage)+
+   				
+   				
+   				 "</div><br><br>"  );
+   				
+   			}
+   			
+   			
+   			
+   		});
+   		</script>		
+		
+		
+		
+		
+
+</head>
+
+<body>
+
+
+<div id="topNav">
+  <img src="images/adv_logo_hd.gif" alt="adv_logo" class="advImg">   
+     	 
+  <div id="select1">        
+    <select name="select">
+      <option value="united states">united states</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    </div>
+    
+   
+  <div id="select2" >
+    <select name="select">
+      <option value="volvo2">Volvo2</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    </div>
+    
+
+    
+    <input name="textfield" type="text" id="textfield">
+    
+    
+  <img src="images/search_btn.gif" name="search_img" width="18" height="22" class="search_Img" id="search_img">
+</div>
+
+
+</br>
+</br>
+
+
+ 
+  <div id="centeredmenu">
+   <ul>
+      <li><a href="#">RATES & RESERVATIONS</a></li>
+      <li><a href="#" class="active"> A-PASS ONLINE CHECK-IN</a></li>
+      <li><a href="#">FIND A LOCATION</a></li>
+      <li><a href="#">DEALS AND OFFERS</a></li>
+      <li><a href="#">CONTACT US</a></li>
+   </ul>
+</div>
+
+  
+  <br/>
+  <br/>
+  
+  <div id="arrowmenu">
+   <ul>
+      <li><a href="#">   STEP 1   </a></li>
+      <li><a href="#" class="active"> 2. SELECT VEHICLES & EXTRAS</a></li>
+      <li><a href="#">STEP 3</a></li>
+      <li><a href="#">STEP 4</a></li>
+       <li><a href="#">CONTACT US</a></li>
+    </li>
+   </ul>
+</div>
+ 
+ <br/><br/><br/>
+ 
+ 
+
+    
+<div id="MainOuter">
+  
+  <div id="MainLeft">
+  
+  	<div id="carContent1">
+  
+        <div id="cC1">
+        
+        </div> 
+      
+        <div id="cC2">
+        </div>
+        
+        <div id="cC3">
+        </div>
+        
+        <div id="cC4">
+        </div>
+        
+    
+  </div>
+  
+  
+  </div>
+  
+  <div id="MainRight">
+  
+    
+    
+    <div id="MainRightTop">MainRightTop</div>
+    
+    <div id="MainRightBottom">MainRightBottom</div>
+    
+      
+  Content for New Div Tag Goes Here </div>
+  <div clear:both/>
+  
+</div>
+</body>
+</html>

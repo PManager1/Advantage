@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Bug 1</title>
+	
+	<script	src="jquery.min.js"></script>
+
+	<script>
+		$(function() {
+			
+			
+		});
+	</script>
+		
+	<style type="text/css">
+		.navigation {
+			padding: 5px 5px 10px 5px;
+		}	
+	
+		.prev {
+			float: left;
+		}
+	
+		.next {
+			float: right;
+		}
+	
+		.instructions {
+			padding: 5px;
+			border-bottom: 1px solid black;
+			margin-bottom: 10px;
+		}
+		
+		.outer {
+			margin-top: 20px;
+			border: 2px solid red;
+			height: 500px;
+			width: 500px;
+		}
+		
+		.inner {
+			border: 2px solid blue;
+		}
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="navigation">
+	<span class="prev">&lt; Prev Bug</span>
+	<a class="next" href="bug2.html">Next Bug &gt;</a>
+</div>
+	
+<div class="instructions">
+	<h3>Instructions:</h3>
+
+	Vertically center the blue div inside the red div using CSS only. This should work in IE6+ and Firefox, and remained centered after the "random content" button is clicked. Click "Next" when finished.
+</div>
+
+<input id="randomize" type="button" value="Randomize Content" />
+
+<div class="outer">
+	<div id="content" class="inner"></div>
+</div>
+
+</body>
+
+</html>

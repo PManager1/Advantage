@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Bug 4</title>
+	
+	<script type="text/javascript">
+		window.onload = function() {
+			var dropdown = document.getElementById('dropdown');
+			
+			for(var i = 1; i <= 10; i++)
+				dropdown.innerHTML += '<option>' + i + '</option>';
+		}
+	</script>
+		
+	<style type="text/css">
+		.navigation {
+			padding: 5px 5px 10px 5px;
+		}	
+	
+		.prev {
+			float: left;
+		}
+	
+		.next {
+			float: right;
+		}
+	
+		.instructions {
+			padding: 5px;
+			border-bottom: 1px solid black;
+			margin-bottom: 10px;
+		}
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="navigation">
+	<a class="prev" href="bug3.html">&lt; Prev Bug</a>
+	<a class="next" href="bug5.html">Next Bug &gt;</a>
+</div>
+	
+<div class="instructions">
+	<h3>Instructions:</h3>
+
+	The select tag is not being populated correctly in IE6 and IE7, fix the problem without using native JS (no jQuery etc).
+</div>
+
+
+<select id="dropdown"></select>
+
+</body>
+
+</html>	

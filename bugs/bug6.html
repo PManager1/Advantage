@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Bug 6</title>
+	
+	<style type="text/css">
+		.navigation {
+			padding: 5px 5px 10px 5px;
+		}	
+	
+		.prev {
+			float: left;
+		}
+	
+		.next {
+			float: right;
+		}
+	
+		.instructions {
+			padding: 5px;
+			border-bottom: 1px solid black;
+			margin-bottom: 10px;
+		}
+		
+		#content ul {
+			clear: both;
+			list-style: none;	
+		}
+
+		#content a {
+			display: block;
+			width: 130px;
+			text-align: center;
+			float: left;
+			color: white;
+			background-color: blue;
+		}
+
+		#bottom a {
+			background-color: yellow;
+			color: #aaa;
+			font: bold 1.1em arial, sans-serif;
+			
+		}		
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="navigation">
+	<a class="prev" href="bug5.html">&lt; Prev Bug</a>
+	<a class="next" href="bug7.html">Next Bug &gt;</a>
+</div>
+	
+<div class="instructions">
+	<h3>Instructions:</h3>
+
+	These lists display incorrectly in IE6 and 7, make it look the same across all browsers using CSS. Don't change the look and feel of the layout (colors, fonts, etc).
+</div>
+
+<div id="content">
+	<ul id="top">
+		<li><a href="#">Lorem Ipsum</a></li>
+		<li><a href="#">Lorem Ipsum</a></li>
+		<li><a href="#">Lorem Ipsum</a></li>
+	</ul>
+
+	<ul id="bottom">
+		<li><a href="#">Lorem Ipsum</a></li>
+		<li><a href="#">Lorem Ipsum</a></li>
+		<li><a href="#">Lorem Ipsum</a></li>
+	</ul>
+</div>
+
+
+</body>
+
+</html>	

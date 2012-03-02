@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Bug 2</title>
+		
+	<style type="text/css">
+		.navigation {
+			margin-top: 100px;
+			padding: 5px 5px 10px 5px;
+		}	
+	
+		.prev {
+			float: left;
+		}
+	
+		.next {
+			float: right;
+		}
+	
+		.instructions {
+			padding: 5px;
+			border-bottom: 1px solid black;
+			margin-bottom: 10px;
+		}	
+	
+		.outer {
+			border: 3px dashed black;
+			padding: 8px;
+		}
+		
+		.inner {
+			border: 3px solid black;
+			padding: 0 8px 8px 8px;
+		}
+		
+		.one {
+			border: 1px solid black;
+			margin-top: 8px;
+		}
+		
+		.two {
+			border: 1px solid blue;
+			margin-top: -1px;
+		}
+		
+		.outer p {
+			margin-bottom: 0;
+		}
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="outer">
+	<div class="inner">
+		<div class="one">
+			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+		</div>
+		<div class="two">
+			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+		</div>
+		<div class="one">
+			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+		</div>
+		<div class="two">
+			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+		</div>
+	</div>
+	<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+</div>
+
+
+
+<div class="navigation">
+	<a class="prev" href="bug1.html">&lt; Prev Bug</a>
+	<a class="next" href="bug3.html">Next Bug &gt;</a>
+</div>
+	
+<div class="instructions">
+	<h3>Instructions:</h3>
+
+	This layout is broken in IE6. Fix it without changing margins, borders or padding.
+</div>
+
+</body>
+
+</html>

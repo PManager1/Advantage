@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Bug 3</title>
+	
+	<script	src="jquery.min.js"></script>
+		
+	<style type="text/css">
+		.navigation {
+			padding: 5px 5px 10px 5px;
+		}	
+	
+		.prev {
+			float: left;
+		}
+	
+		.next {
+			float: right;
+		}
+	
+		.instructions {
+			padding: 5px;
+			border-bottom: 1px solid black;
+			margin-bottom: 10px;
+		}
+		
+		.content {
+			display:block; 
+			background:#ddd; 
+			padding:3px; 
+			position:relative;
+			z-index:1; 
+			margin-bottom:-3em;
+		}
+		
+		.dropdown {
+			position: relative; 
+			z-index:-1;
+		}
+		
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="navigation">
+	<a class="prev" href="bug2.html">&lt; Prev Bug</a>
+	<a class="next" href="bug4.html">Next Bug &gt;</a>
+</div>
+	
+<div class="instructions">
+	<h3>Instructions:</h3>
+
+	The select tag should not be visible through the element above it, but IE6 is ignoring the z-index. Fix the problem using a workaround in JS/CSS.
+</div>
+
+<div class="content">
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 	
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 		
+</div>
+
+<select size="4" class="dropdown">
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+</select>
+
+<select size="5" class="dropdown">
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+</select>
+
+<select size="4" class="dropdown">
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+</select>
+
+<select size="3" class="dropdown">
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+	<option>Option</option>
+</select>
+
+</body>
+
+</html>		

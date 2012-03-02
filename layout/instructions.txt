@@ -1,0 +1,18 @@
+Instructions:
+
+Build the following layout in HTML/CSS. Use the StyleGuide.pdf for pixel measurements, colors, and fonts. 
+
+- Your finished product should look like the picture in reference.jpg.
+
+- Your layout should work in IE6, IE7, IE8, and the latest Firefox and Chrome.
+
+- Populate the vehicle data content on the page by making an ajax call to the "vehicle_data.json" file
+
+- Implement the "hover state" of the top navigation shown in navigation.jpg using javascript 
+
+- All the images for the layout are in the "images" folder.
+
+- Try not to use tables where possible, follow Hertz coding standards and write clean code.
+
+
+
